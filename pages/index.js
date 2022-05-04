@@ -1,12 +1,13 @@
 import React from 'react'
 import {Product, FooterBanner, HeroBanner} from '../components';
 
+
 import { client } from '../Lib/client';
 
 const Home = ({products, bannerData}) => {
   return (
     <>
-      <HeroBanner heroBanner = {bannerData.length & bannerData[0]}/>
+      <HeroBanner heroBanner = {bannerData.length && bannerData[0]}/>
         {console.log(bannerData)}
 
       <div className="products-heading">
