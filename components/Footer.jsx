@@ -1,8 +1,11 @@
 import React from 'react'
+import { AiFillInstagram, AiOutlineTwitter } from 'react-icons'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div>
+      
+    </div>
   )
 }
 
