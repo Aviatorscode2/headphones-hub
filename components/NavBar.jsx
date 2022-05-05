@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { AiOutlineShoppingPage } from 'react-icons'
+import { AiOutlineShopping } from 'react-icons/ai'
 
 function NavBar() {
   return (
@@ -8,8 +8,8 @@ function NavBar() {
         <p className="logo">
             <Link href="/">Headphones Hub</Link>
         </p>
-        <button type="button" className="cart-icon" onClick="">
-            <AiOutlineShoppingPage />
+        <button type="button" className="cart-icon">
+            <AiOutlineShopping />
             <span className="cart-item-qty">1</span>
         </button>
     </div>
