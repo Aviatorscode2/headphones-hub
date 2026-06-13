@@ -22,6 +22,9 @@
     "react-icons": "^4.3.1",
     "stripe": "^8.209.0"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
     "eslint": "8.14.0",
