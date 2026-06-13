@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import rawProducts from '../../data/products';
-import { getStockStatus } from '../../lib/stockStore';
+import { getStockStatus } from '../../Lib/stockStore';
 import { useStateContext } from '../../context/StateContext';
 
 function applyOverrides(product) {

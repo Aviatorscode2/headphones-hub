@@ -1,5 +1,5 @@
 import rawProducts from '../../data/products';
-import { getStockStatus, setStockStatus } from '../../lib/stockStore';
+import { getStockStatus, setStockStatus } from '../../Lib/stockStore';
 
 export default function handler(req, res) {
   if (req.method !== 'POST') {

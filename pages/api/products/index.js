@@ -1,5 +1,5 @@
 import rawProducts from '../../../data/products';
-import { getStockStatus } from '../../../lib/stockStore';
+import { getStockStatus } from '../../../Lib/stockStore';
 
 function applyOverrides(products) {
   return products.map((p) => ({
