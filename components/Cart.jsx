@@ -56,7 +56,16 @@ const Cart = () => {
         <div className="product-container">
           {cartItems.length >= 1 && cartItems.map((item) => (
             <div className="product" key={item._id}>
-              <img src={urlFor(item?.image[0])} className="cart-product-image" />
+              {Array.isArray(item.image) ? (
+                <img src={urlFor(item.image[0])} className="cart-product-image" />
+              ) : (
+                <div
+                  className="cart-product-image cart-product-placeholder"
+                  style={{ backgroundColor: (item.color || '#888') + '22', color: item.color || '#888' }}
+                >
+                  {item.name?.split(' ').map((w) => w[0]).join('')}
+                </div>
+              )}
               <div className="item-desc">
                 <div className="flex top">
                   <h5>{item.name}</h5>
